@@ -1,62 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Profile Saya</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-      margin: 20px 0;
-    }
-    img {
-      display: block;
-      margin: 0 auto;
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-    }
-    h2 {
-      font-size: 18px;
-      color: #333;
-      margin: 20px 0;
-    }
-    p {
-      font-size: 14px;
-      line-height: 1.5;
-      margin: 0 20px 20px;
-    }
-    ul {
-      list-style: none;
-      margin: 0 20px 20px;
-      padding: 0;
-    }
-    li {
-      font-size: 14px;
-      line-height: 1.5;
-      margin: 10px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Portofolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="./assets/logo/logo-tab.ico" type="image/x-icon">
 </head>
 <body>
-  <h1>Profile Saya</h1>
-  <img src="foto-saya.png" alt="Foto saya">
-  <h2>Tentang Saya</h2>
-  <p>Nama saya adalah Wafa Tsabita. Saya lahir di kota Newcastle pada tanggal 28 Agustus 2003. Saya kuliah di Universitas Padjadjaran dan mengambil jurusan Teknik Informatika.</p>
-  <h2>Pengalaman Kerja</h2>
-  <ul>
-    <li>Software Engineer di PT DEF (Januari 2018 - Saat ini)</li>
-    <li>Web Developer di PT GHI (Januari 2016 - Desember 2017)</li>
-  </ul>
-  <h2>Keahlian</h2>
-  <ul>
-    <li>Pemrograman Java</li>
-    <li>Pembuatan website menggunakan HTML, CSS, dan JavaScript</li>
-    <li>Database management</li>
-  </ul>
+    <header id="navbar">
+        <nav class="navbar">
+            <div class="logo"><a href="#home">
+                <img src="./assets/logo/logo-navbar.png" alt="Logo">
+              </a>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#language">Language</a>
+                <a href="#projects">My Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="home" id="home">
+        <div class="left">
+            <h2>Hi There,</h2>
+            <h2>I'M WAFA TSABITA</h2>
+            <h1 style="font-size: 45px;">A <span class="h1">WEB DEVELOPER</span></h1><br>
+            <p></p>
+            <a href="#about">
+            <button>Get To Know Me!</button>
+            </a>
+        </div>
+        <div class="right">
+            <div class="image">
+                <img src="./assets/logo/logo-navbar.png" alt="myphoto" style="width: 500px; border-radius: 50%;">
+            </div>
+        </div>
+    </div>
+
+
+<section id="about">
+    <div class="title">
+        <h2 style="text-align: center; margin-top: 50px;  font-size: 40px;">About Me</h2><br>
+    </div>
+
+    <div class="about">
+        <div class="left">
+            <img src="./assets/png/myphoto1.png" alt="myphoto" style="width: 250px; border-radius: 50%;">
+        </div>
+        <div class="right">
+            <span>
+                I am an active undergraduate student at Padjadjaran University majoring in Computer Engineering. 
+                <br>
+                I actively participate in organizations, committees, and volunteer events. I am ambitious, innovative, communicative, adaptive, initiative, quick to learn new things, and capable of working both independently and in a team.
+            </span>
+        </div>
+    </div>
+</section>
+
+<section id="language">
+    <div class="container">
+      <div class="row">
+            <div class="title">
+                <h2 style="text-align: center; margin-top: 50px; font-size: 40px;">Languages</h2><br>
+            </div>
+        <div class="language__list">
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img
+                src="./assets/logo/html.png"
+                alt="Html Logo" class="language__img"/>
+            </figure>
+            <span class="language__name">HTML</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/logo/css.png" alt="CSS Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">CSS</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/logo/js.png" alt="JavaScript Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">JavaScript</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/logo/react.png"
+                class="language__img" />
+            </figure>
+            <span class="language__name">React</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/logo/node.png" alt="Nodejs Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">Nodejs</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/logo/Vue.png" alt="Vue Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">Vue</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/logo/laravel.png" alt="laravel Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">Laravel</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/logo/flutter.png" alt="Flutter Logo" class="language__img" />
+            </figure>
+            <span class="language__name">Flutter</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/logo/python.png" alt="python Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">Python</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/logo/c++.png" alt="C++ Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">C++</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/logo/csharp.png" alt="C# Logo"
+                class="language__img" />
+            </figure>
+            <span class="language__name">C#</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/logo/java.png" alt="Java Logo" class="language__img" />
+            </figure>
+            <span class="language__name">Java</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 </body>
 </html>
+
+
+<script>
+    window.onscroll = function() { scrollFunction(); };
+
+    function scrollFunction() {
+        var navbar = document.getElementById("navbar");
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            navbar.style.backgroundColor = "#FFF8EA"; // Change the background color as needed
+            navbar.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)"; // Add shadow effect
+        } else {
+            navbar.style.backgroundColor = "#FFF8EA"; 
+            navbar.style.boxShadow = "none"; // Remove shadow effect
+        }
+    }
+</script>
