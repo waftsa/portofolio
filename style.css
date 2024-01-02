@@ -88,7 +88,7 @@ header {
 .left {
     width: 50%;
     text-align: left;
-    padding-left: 15%;
+    padding-left: 7%;
 }
 
 .left button{
@@ -98,18 +98,38 @@ header {
     color: #594545;
     border:2px solid #594545;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .left button:hover{
     background-color: #594545;
     color: #FFF8EA;
+    cursor: pointer;
 }
+
+.left .btn-cv{
+    width: auto;
+    padding: 10px;
+    background-color:#594545 ;
+    color: #FFF8EA;
+    border:2px solid #594545;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.left .btn-cv:hover{
+    background-color: #FFF8EA;
+    border:2px solid #594545;
+    color: #594545 ;
+    cursor: pointer;
+}
+
 
 .right {
     width: 50%;
     margin: left;
     align-items: left;
-    padding-right: 15%;
+    padding-right: 7%;
 }
 
 h1 {
@@ -123,15 +143,45 @@ h2 {
 
 .h1{
     font-family: 'Lemon Days', sans-serif; 
-    color: #000;
+    color: #FFF8EA;
+    text-shadow: 2px 2px 0 #594545, 
+                 -2px -2px 0 #594545, 
+                 2px -2px 0 #594545, 
+                 -2px 2px 0 #594545;
 }
 
 .right .image {
     position: relative; 
 }
+.typing-text {
+    overflow: hidden;
+    border-right: 0.15em solid #594545; 
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0.15em; 
+    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+}
 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #594545; 
+    }
+}
 .about {
-    height: 50vh;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,8 +189,11 @@ h2 {
     background-color: #ffff;
     padding: 20px;
 }
+
+/* LANGAUGE */
+
 .container{
-    height: 100vh;
+    height: auto;
     background-color: #FFF8EA;
     padding: 20px;
 }
@@ -187,6 +240,120 @@ h2 {
     transform: scale(1);
     opacity: 1;
   }
+   
+
+  /* PROJECTS */
+  .container-project{
+    height: auto;
+    background-color: #ffff;
+    padding: 20px;
+    align-items: center;
+}
+  .project {
+    margin-bottom: 45px;
+  }
   
+  .project:last-child {
+    margin-bottom: 40px;
+  }
+  
+  .project__img {
+    width: 100%;
+    transition: all 500ms ease;
+  }
+  
+  .project__wrapper {
+    display: flex;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 85%;
+  }
+  .project__wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1c1d25;
+    opacity: 0;
+    transition: all 450ms ease;
+    z-index: 2;
+    transform: translateY(100%);
+  }
+  .project:hover .project__wrapper:before {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  .project:hover .project__img {
+    transform: scale(1.07);
+    filter: blur(5px);
+  }
+  
+  .project:hover .project__description {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+  
+  .project__list {
+    align-items: center;
+    padding-top: 20;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 7%;
+    /* margin-right:; */
+  }
+  
+  .project__description {
+    position: absolute;
+    top: 45%;
+    left: 75px;
+    right: 15px;
+    transform: translateY(100%);
+    max-width: 550px;
+    z-index: 3;
+    opacity: 0;
+    transition: transform 450ms, opacity 300ms;
+  }
+  
+  .project__description--title {
+    font-size: 28px;
+  }
+  
+  .project__description--para {
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  
+  .project__description--link {
+    font-size: 20px;
+    margin-right: 16px;
+  }
+  .project__description--link .btn-detail{
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .project__description--link .btn-detail:hover{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .project__description--title,
+  .project__description--sub-title,
+  .project__description--para,
+  .project__description--link {
+    text-align: left;
+    color: #fff;
+  }
+
 
 

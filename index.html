@@ -18,22 +18,27 @@
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
-                <a href="#language">Language</a>
-                <a href="#projects">My Projects</a>
+                <a href="#tech">Tech</a>
+                <a href="#project">My Projects</a>
                 <a href="#contact">Contact</a>
             </div>
         </nav>
     </header>
 
-    <div class="home" id="home">
+<section id="home">
+    <div class="home">
         <div class="left">
-            <h2>Hi There,</h2>
-            <h2>I'M WAFA TSABITA</h2>
-            <h1 style="font-size: 45px;">A <span class="h1">WEB DEVELOPER</span></h1><br>
-            <p></p>
+            <h2>Hi There, I'M WAFA TSABITA</h2>
+            <h1>I AM A</h1>
+            <h1 style="font-size: 45px;"><span class="h1 typing-text"></span></h1><br>
             <a href="#about">
             <button>Get To Know Me!</button>
             </a>
+
+            <a href="https://drive.google.com/file/d/1oXojIO8xbnwK2Qy6p-VOx5Gasc4dADU-/view?usp=sharing">
+            <button class="btn-cv">Download My CV</button>
+            </a>
+
         </div>
         <div class="right">
             <div class="image">
@@ -41,6 +46,7 @@
             </div>
         </div>
     </div>
+  </section>
 
 
 <section id="about">
@@ -50,7 +56,7 @@
 
     <div class="about">
         <div class="left">
-            <img src="./assets/png/myphoto1.png" alt="myphoto" style="width: 250px; border-radius: 50%;">
+            <img src="./assets/png/myphoto1.png" alt="myphoto" style="width: 500px; border-radius: 50%;">
         </div>
         <div class="right">
             <span>
@@ -62,11 +68,11 @@
     </div>
 </section>
 
-<section id="language">
+<section id="tech">
     <div class="container">
       <div class="row">
             <div class="title">
-                <h2 style="text-align: center; margin-top: 50px; font-size: 40px;">Languages</h2><br>
+                <h2 style="text-align: center; margin-top: 50px; font-size: 40px;">Tech Stacks</h2><br>
             </div>
         <div class="language__list">
           <div class="language">
@@ -157,12 +163,143 @@
     </div>
   </section>
 
+<section id="project">
+  <div class="container-project">
+    <div class="row">
+      <div class="title">
+        <h2 style="text-align: center; margin-top: 50px; font-size: 40px;">My Projects</h2><br>
+      </div>
+      <div class="project__list">
+        <div class="project">
+          <div class="project__wrapper">
+            <img src="./assets/project/partimer.png" class="project__img" alt="partimer">
+            <div class="project__description">
+              <h4 class="project__description--title">Partimer</h4>
+              <h5 class="project__description--sub-title">
+                Html, CSS, Javascrips, Vue, Laravel, MySql
+              </h5>
+              <p class="project__description--para">
+                Partimer is an application website, 
+                this web can be a portal for user who are finding part time jobs, 
+                and user who want to hire part time employees.
+              </p>
+              <div class="project__description--links">
+                <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
+                  <button class="btn-detail">More Details</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project__wrapper">
+            <img src="./assets/project/readit.png" class="project__img" alt="readit">
+            <div class="project__description">
+              <h4 class="project__description--title">Readit</h4>
+              <h5 class="project__description--sub-title">
+                Reactjs, Nodejs, Expressjs, MongoDB 
+              </h5>
+              <p class="project__description--para">
+               Readit is an application website,
+               which provides e-books for users
+              </p>
+              <div class="project__description--links">
+                <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
+                  <button class="btn-detail">More Details</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project__list">
+        <div class="project">
+          <div class="project__wrapper">
+            <img src="./assets/project/qnnect.png" class="project__img" alt="partimer">
+            <div class="project__description">
+              <h4 class="project__description--title">Qnnect</h4>
+              <h5 class="project__description--sub-title">
+                Flutter, Figma
+              </h5>
+              <p class="project__description--para">
+                Partimer is a application website, 
+                this web can be a portal for user who are finding part time jobs, 
+                and user who want to hire part time employees.
+              </p>
+              <div class="project__description--links">
+                <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
+                  <button class="btn-detail">More Details</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project__wrapper">
+            <img src="./assets/project/readit.png" class="project__img" alt="readit">
+            <div class="project__description">
+              <h4 class="project__description--title">Readit</h4>
+              <h5 class="project__description--sub-title">
+                Reactjs, Nodejs, Expressjs, MongoDB 
+              </h5>
+              <p class="project__description--para">
+               Readit is a application website,
+               which provides e-books for users
+              </p>
+              <div class="project__description--links">
+                <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
+                  <button class="btn-detail">More Details</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+
+    </div>
+  </div>
+</section>
+
 
 </body>
 </html>
 
 
 <script>
+  const textList = ['WEB DEVELOPER', 'WEB DESIGNER', 'GRAPHIC DESIGNER'];
+    let textIndex = 0;
+    let charIndex = 0;
+    const typingElement = document.querySelector('.typing-text');
+
+    function type() {
+        if (charIndex < textList[textIndex].length) {
+            typingElement.textContent += textList[textIndex][charIndex];
+            charIndex++;
+            setTimeout(type, 100);
+        } else {
+            setTimeout(() => erase(type), 1500);
+        }
+    }
+
+    function erase(callback) {
+        if (charIndex > 0) {
+            typingElement.textContent = textList[textIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(() => erase(callback), 50);
+        } else {
+            textIndex = (textIndex + 1) % textList.length;
+            callback();
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        type();
+    });
+
+
     window.onscroll = function() { scrollFunction(); };
 
     function scrollFunction() {
